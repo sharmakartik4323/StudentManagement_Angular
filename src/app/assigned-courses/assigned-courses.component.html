@@ -1,0 +1,31 @@
+<div style="margin: 2% 20% 2% 20%;">
+    <div class="row p-2 m-2 border">
+        <div class="col-9">
+          <h2 class="text-primary">Assigned Course</h2>
+        </div>
+      </div>
+      <div class="border container p-2 m-2">
+        <table class="table table-striped table-bordered table-active">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Course Code</th>
+              <th>Credits</th>
+              <th>Course Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let course of courseList">
+              <td>{{ course.name }}</td>
+              <td>{{ course.description }}</td>
+              <td>{{ course.courseCode }}</td>
+              <td>{{ course.credits }}</td>
+              <td>{{ course.courseDuration }}</td>
+              <td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</div>
